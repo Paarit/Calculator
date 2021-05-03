@@ -13,50 +13,111 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #e28a16;
+    background: #FBCEB1;
+    
+}
+h1{
+    font-style: italic;
+    font: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: center;
+    margin: 30px;
+    padding: 30px;
+    
 }
 .calculator
 {
     position: relative;
     display: grid;
+    
+    margin: 0;
+    padding: 10px;
 }
 .calculator .value
 {
     grid-column: span 4;
     height: 100px;
     text-align: right;
-    border: none;
     outline: none;
-    padding: 10px;
+
     font-size: 18px;
+}
+.value
+{
+    width: 292px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #f1faeb;
+    float: left;
+    border-color: silver;
+    margin: 5px 5px 5px 10px;
+    padding: 3px 5px 3px 5px;
+    border: 2px solid rgb(0, 0, 0);
 }
 .calculator span
 {
-    display: grid;
+    /*display: grid;
     width: 60px;
     height: 60px;
     color: #fff;
     background: #0c2835;
+    */
+
+    display: grid;
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 5px 5px 5px 5px;
+    color: #495069;
+    background-color:seashell;
+    width: 60px;
+    height: 50px;
+    float:center;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
     place-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+.calculator span:hover{
+    background-color: #efe6ff;
 }
 .calculator span:active
 {
-    background: #74ff3b;
-    color: #111;
+        background: #e5e5e5;
+        -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+           -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+                box-shadow: inset 0px 0px 5px #c1c1c1;
+         outline: none;
+      
 }
 .calculator span.clear
 {
     grid-column: span 2;
-    width: 120px;
-    color: royalblue;
+    width: 140px;
+    background-color: rgb(250, 65, 19);
 }
 .calculator span.plus
 {
     grid-row: span 2;
     height: 120px;
+    background-color: gold;
 }
 .calculator span.equal
 {
     background: #03b1ff;
+}
+.calculator span.divide
+{
+    background-color: gold;
+}
+.calculator span.multiply
+{
+    background-color: gold;
+}
+.calculator span.minus
+{
+    background-color: gold;
 }
