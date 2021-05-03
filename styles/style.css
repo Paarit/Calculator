@@ -16,14 +16,11 @@ body
     background: #FBCEB1;
     
 }
-h1{
-    font-style: italic;
-    font: 300%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: center;
-    margin: 30px;
-    padding: 30px;
-    
+h1 {
+        font-size: 50px;
+        background: -webkit-linear-gradient(rgb(240, 236, 11), rgb(255, 0, 0));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 .calculator
 {
